@@ -1,0 +1,49 @@
+{
+  "name": "wordnets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:open-language/wordnets.git",
+  "author": "Sudhanshu Raheja <sudhanshu@leftshift.io>",
+  "license": "MIT",
+  "docker": {
+    "group": "lana-school",
+    "name": "open-language"
+  },
+  "keywords": [
+    "wordnet",
+    "natural-language-processing",
+    "english-language",
+    "language",
+    "nlp",
+    "princeton-wordnet",
+    "bahasa-wordnet"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --collect-coverage",
+    "coverage": "open ./coverage/lcov-report/index.html",
+    "lint": "eslint **/*.js --fix-dry-run",
+    "build": "docker build -t $npm_package_docker_group/$npm_package_docker_name:$(git describe --always --abbrev --tags --long) .",
+    "docker_tag": "docker tag $npm_package_docker_group/$npm_package_docker_name:$(git describe --always --abbrev --tags --long) $npm_package_docker_group/$npm_package_docker_name:latest",
+    "docker_push": "docker push $npm_package_docker_group/$npm_package_docker_name",
+    "docker_rmi": "docker rmi $npm_package_docker_group/$npm_package_docker_name",
+    "docker_run": "docker run -p 8080:$npm_package_docker_port -d --name $npm_package_docker_name $npm_package_docker_group/$npm_package_docker_name",
+    "docker_stop": "docker stop $npm_package_docker_name",
+    "docker_rm": "docker rm $npm_package_docker_name",
+    "app_version": "echo $npm_package_version"
+  }
+}
