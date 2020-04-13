@@ -1,0 +1,17 @@
+{
+  "en_wordnet_3_0": {
+    "home": "https://wordnet.princeton.edu/",
+    "download": "http://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz",
+    "path": "data/en-wordnet-3_0"
+  },
+  "en_wordnet_3_1": {
+    "home": "https://wordnet.princeton.edu/",
+    "download": "http://wordnetcode.princeton.edu/wn3.1.dict.tar.gz",
+    "path": "data/en-wordnet-3_1"
+  },
+  "msa_wordnet_r24": {
+    "home": "http://wn-msa.sourceforge.net/",
+    "download": "https://sourceforge.net/p/wn-msa/tab/HEAD/tree/trunk/",
+    "path": "data/msa-wordnet-r24"
+  }
+}

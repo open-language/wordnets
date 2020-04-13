@@ -36,14 +36,8 @@
     "start": "node index.js",
     "test": "jest --collect-coverage",
     "coverage": "open ./coverage/lcov-report/index.html",
+    "package": "tar cvf wordnets-$npm_package_version.tar data/; gzip wordnets-$npm_package_version.tar; mv wordnets-$npm_package_version.tar.gz packages/",
     "lint": "eslint **/*.js --fix-dry-run",
-    "build": "docker build -t $npm_package_docker_group/$npm_package_docker_name:$(git describe --always --abbrev --tags --long) .",
-    "docker_tag": "docker tag $npm_package_docker_group/$npm_package_docker_name:$(git describe --always --abbrev --tags --long) $npm_package_docker_group/$npm_package_docker_name:latest",
-    "docker_push": "docker push $npm_package_docker_group/$npm_package_docker_name",
-    "docker_rmi": "docker rmi $npm_package_docker_group/$npm_package_docker_name",
-    "docker_run": "docker run -p 8080:$npm_package_docker_port -d --name $npm_package_docker_name $npm_package_docker_group/$npm_package_docker_name",
-    "docker_stop": "docker stop $npm_package_docker_name",
-    "docker_rm": "docker rm $npm_package_docker_name",
     "app_version": "echo $npm_package_version"
   }
 }

@@ -2,7 +2,7 @@
 
 ![](assets/logo.png)
 
-Wordnets is a node.js module which makes [Princeton University's Wordnet](https://wordnet.princeton.edu/) and [Wordnet Bahasa](http://wn-msa.sourceforge.net/index.eng.html) available as one node.js package. It merged the [en-wordnet](https://github.com/open-language/en-wordnet) and [id-wordnet](https://github.com/open-language/id-wordnet) repos, which are now archived.
+Wordnets is a package which makes [Princeton University's Wordnet](https://wordnet.princeton.edu/) and [Wordnet Bahasa](http://wn-msa.sourceforge.net/index.eng.html) available as one gzip package. It merged the [en-wordnet](https://github.com/open-language/en-wordnet) and [id-wordnet](https://github.com/open-language/id-wordnet) repos, which are now archived.
 
 ## About
 
