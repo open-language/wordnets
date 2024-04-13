@@ -15,6 +15,16 @@ Inspired by [Princeton WordNet](https://wordnet.princeton.edu/) and the [Global 
 ![](https://img.shields.io/travis/open-language/wordnets.svg)
 ![](https://img.shields.io/codecov/c/github/open-language/wordnets/master.svg)
 
+## Getting started
+
+We use [bun](https://bun.sh/) for this project.
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+bun install
+bun test
+```
+
 ## Where did you find this?
 
 The latest version of the Princeton Wordnet can be found at the [website](https://wordnet.princeton.edu/download/current-version). There are links to both the 3.0 version and the 3.1 version.
